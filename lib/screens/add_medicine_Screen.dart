@@ -50,8 +50,8 @@ class _AddMedicineScreenState extends State<AddMedicineScreen> {
         now.year,
         now.month,
         now.day,
-        provider.selectedTime!.hour,
-        provider.selectedTime!.minute,
+        time.hour,
+        time.minute,
       );
 
 
@@ -61,6 +61,9 @@ class _AddMedicineScreenState extends State<AddMedicineScreen> {
       time: dateTime);
       
       provider.addMedicine(medicine);
+        provider.showNotification(
+      'Medicine Added', 'You added ${medicine.name}');
+      provider.scheduleNotification(medicine);
       Navigator.pop(context);  
       
      }

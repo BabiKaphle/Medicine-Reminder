@@ -70,14 +70,14 @@ class _HomeScreenState extends State<HomeScreen> {
                child: Container(
                 height: MediaQuery.of(context).size.height*0.6,
                    color: Colors.white,
-                   child: provider.medicines.isEmpty? 
-                   const Center(
-                     child: Text('No medicines added',
-                     style: TextStyle(color: Colors.black,
-                     ),),
-                   ) 
-                   : Expanded(
-                     child: ListView.builder(
+                   child: Expanded(
+                     child: provider.medicines.isEmpty? 
+                     const Center(
+                       child: Text('No medicines added',
+                       style: TextStyle(color: Colors.black,
+                       ),),
+                     ) 
+                     : ListView.builder(
                        itemCount: provider.medicines.length,
                        itemBuilder:(context, index){
                          final med = provider.medicines[index];
