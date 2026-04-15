@@ -75,13 +75,7 @@ Suggestions, improvements, and pull requests are welcome!
 
 ---
 
-## 📌 Author
 
-**Babita Kaphle**  
-BSc CSIT Student | Aspiring Flutter Developer  
-Kathmandu, Nepal
-
----
 
 ## 🎥 Demo Video
 
